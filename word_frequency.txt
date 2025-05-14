@@ -1,0 +1,17 @@
+File Analysis Results:
+Total words: 11
+Unique words: 9
+
+Word Frequencies (in descending order):
+----------------------------------------
+Word                 | Count
+----------------------------------------
+world                | 2
+python               | 2
+hello                | 1
+is                   | 1
+great                | 1
+welcome              | 1
+to                   | 1
+the                  | 1
+of                   | 1
