@@ -3,15 +3,7 @@ import sys
 from pathlib import Path
 
 def extract_emails(file_path):
-    """
-    Extract all email addresses from a text file using regex
     
-    Args:
-        file_path: Path to the text file to process
-        
-    Returns:
-        List of email addresses found in the file
-    """
     # Email regex pattern
     # This pattern matches most common email formats
     email_pattern = r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}'

@@ -5,19 +5,7 @@ from datetime import datetime
 from pathlib import Path
 
 def rename_files(directory_path, pattern, start_number=1, preserve_extension=True, preview=True):
-    """
-    Rename all files in a directory according to a specified pattern
-    
-    Args:
-        directory_path: Path to the directory containing files to rename
-        pattern: String pattern for new filenames (use {n} for number, {date} for current date)
-        start_number: Starting number for the sequence
-        preserve_extension: Whether to keep the original file extensions
-        preview: Whether to show preview only without actually renaming
-        
-    Returns:
-        int: Number of files that were renamed (or would be renamed in preview mode)
-    """
+
     try:
         # Get all files in the directory (excluding directories)
         files = [f for f in os.listdir(directory_path) if os.path.isfile(os.path.join(directory_path, f))]

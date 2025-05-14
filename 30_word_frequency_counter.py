@@ -3,15 +3,7 @@ import sys
 from collections import Counter
 
 def count_word_frequency(file_path):
-    """
-    Count the frequency of each word in a text file
-    
-    Args:
-        file_path: Path to the text file to analyze
-        
-    Returns:
-        Counter object with word frequencies
-    """
+   
     try:
         # Read the file
         with open(file_path, 'r', encoding='utf-8', errors='ignore') as file:

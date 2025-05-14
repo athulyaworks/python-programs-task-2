@@ -125,7 +125,7 @@ def transfer_money():
     print("="*40)
     print(f"Current Balance: ${balance:.2f}")
     
-    # Get recipient account (simplified)
+    # Get recipient account 
     recipient = input("Enter recipient account number (or 'cancel'): ")
     if recipient.lower() == 'cancel':
         print("Transfer cancelled.")

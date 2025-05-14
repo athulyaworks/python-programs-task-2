@@ -3,7 +3,7 @@ import numpy as np
 from datetime import datetime, timedelta
 
 # Create sample data
-np.random.seed(42)  # For reproducible results
+np.random.seed(42)  
 
 # Generate sample sales data
 dates = [datetime.now() - timedelta(days=x) for x in range(100, 0, -1)]

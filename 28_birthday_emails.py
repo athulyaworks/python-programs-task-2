@@ -69,13 +69,7 @@ class BirthdayEmailSender:
             print("No birthdays today!")
 
     def send_birthday_email(self, name, email):
-        """
-        Send a birthday email to a specific person
         
-        Args:
-            name: Recipient's name
-            email: Recipient's email address
-        """
         # Create message
         msg = MIMEMultipart()
         msg['From'] = self.email_address
@@ -108,14 +102,7 @@ Best wishes,
             print(f"Failed to send email to {name}: {e}")
 
     def add_birthday(self, name, email, birthday):
-        """
-        Add a new birthday to the CSV file
         
-        Args:
-            name: Person's name
-            email: Person's email
-            birthday: Birthday in MM-DD format (e.g., "01-15" for January 15)
-        """
         with open(self.csv_file_path, 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow([name, email, birthday, ''])
